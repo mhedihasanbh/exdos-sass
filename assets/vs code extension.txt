@@ -1,0 +1,8 @@
+ctl+shift+L=all select
+ctl+L=whole line select
+ctrl+B=sidebar off
+ctrl+alt+down arrow key=multi select
+alt+up arrow key=line move
+
+empty space remove
+^(s)*$\n then Ctrl + Alt + Enter

@@ -1,0 +1,101 @@
+@use '../../utils' as *;
+.project-tab-area{
+    @media #{$md} {
+       padding-right: 0;
+    }
+    @media #{$xs} {
+        padding-right: 15px;
+        padding-left: 15px;
+     }
+}
+.tp-project-tab {
+    @media #{$md} {
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+    }
+    & button{
+        color: #fff;
+        font-size: 90px;
+        font-family: var(--tp-font-heading);
+        line-height: 1.2;
+        padding: 20px 100px;
+        border-bottom: 1px solid #2f446b;
+        transition: .3s;
+        text-align: left;
+       
+        @media #{$xxlm,$xl} {
+            font-size: 72px;
+        }
+        @media #{$md} {
+            font-size: 20px;
+            padding: 20px 15px;
+            margin-bottom: 15px;
+        }
+        @media #{$xs} {
+            font-size: 18px;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+        }
+        @media #{$xl} {
+           padding: 20px 40px;
+        }
+        @media #{$lg} {
+            padding: 20px 30px;
+            font-size: 52px;
+         }
+        &.active{
+            color:var(--tp-theme-color2);
+            border-color:var(--tp-theme-color2);
+        }
+    }
+    &-thumb{
+        @media #{$md} {
+            padding: 0px 30px;
+            
+         }
+
+        & img{
+            max-width: 100%;
+            border-radius: 20px;
+        }
+    }
+    
+}
+.tpportfolio{
+    position: relative;
+    &__thumb{
+
+    }
+    &__text{
+       position: absolute;
+       bottom: 70px;
+       left:80px;
+       opacity: 0;
+       visibility: hidden;
+       transition: .3s;
+       & span{
+        background-color: #fff;
+        display: inline-block;
+        color: #0A0E1A;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 7px 20px 5px 20px;
+       }
+    }
+    &__tittle{
+        background-color: #fff;
+        color: #0A0E1A;
+        font-size: 30px;
+        padding: 12px 20px 12px 20px;
+        margin: 0;
+        margin-top: 5px;
+    }
+    &:hover{
+        & .tpportfolio__text{
+            opacity: 1;
+            visibility: visible; 
+            bottom: 80px;
+        }
+    }
+}

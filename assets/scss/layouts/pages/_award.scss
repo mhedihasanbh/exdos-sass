@@ -1,0 +1,44 @@
+@use '../../utils' as *;
+.tp-award-wrapper{
+    & .row{
+        & .col-xl-6:nth-child(even){
+          & .tp-award{
+            padding-left: 50px;
+            border-left:1px solid #57595C;
+          }
+          @media #{$xs} {
+            padding-left: 0;
+            border-left:0;
+    
+         }
+        }
+        & .col-xl-6:nth-child(1){
+            & .tp-award{
+              padding-top: 0;
+            }
+          }
+          & .col-xl-6:nth-child(2){
+            & .tp-award{
+              padding-top: 0;
+            }
+          }
+          & .col-xl-6:nth-last-child(-n+2){
+            & .tp-award{
+              border-bottom: 0;
+              padding-bottom: 0;
+            }
+          }
+    }
+}
+.tp-award{
+  & h3{
+    @media #{$xl} {
+      font-size: 20px;
+  }
+  }
+    border-bottom: 1px solid #57595C;
+    padding: 38px 0;
+    &-wrapper{
+        padding-right: 80px;
+    }
+}

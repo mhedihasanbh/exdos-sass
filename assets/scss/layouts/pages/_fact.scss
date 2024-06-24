@@ -1,0 +1,44 @@
+@use '../../utils' as *;
+.custom-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media #{$md,$xs} {
+        justify-content:center;
+    }
+
+}
+.tpfact{
+    &__icon{
+
+    }
+    &__tittle{
+        color:#fff;
+        font-size: 30px;
+        opacity: 0.5;
+    }
+    &__text{
+        & span{
+            color: #fff;
+            font-size: 100px;
+            display: inline-block;
+            line-height: 1;
+        }
+    }
+    &-2{
+        & .tpfact__text{
+            & h3{
+                color:#0A0E1A;
+            } 
+            & span{
+                color:#0A0E1A;
+            }    
+        }
+    }
+}
+.cols{
+    @media #{$md} {
+        width: 50%;
+    }
+}
+

@@ -1,0 +1,109 @@
+@use '../../utils' as *;
+.tp-testimonial{
+    &-des{
+       font-size: 100px;
+       @media #{$xl} {
+        font-size: 92px;
+    }
+    @media #{$lg} {
+        font-size:60px;
+    }
+    @media #{$md} {
+        font-size:50px;
+    }
+    @media #{$xs} {
+        font-size:35px;
+    }
+    }
+    &-text{
+        color:#fff;
+        font-size: 60px;
+        & i{
+            color:var( --tp-theme-color2);
+            font-size: 42px;
+        }
+    }
+    
+   
+    &-name{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    &-designation{
+        font-size: 17px;
+         & span{
+            width: 60px;
+            height: 1px;
+            background: #57595c;
+            display: inline-block;
+            margin-right: 5px;
+            transform: translateY(-5px);
+
+         }
+    }
+    &-shape{
+        position: absolute;
+        top: 57px;
+        left: 26%;
+        z-index: -1;
+        @media #{$lg} {
+            top:0;
+        }
+    }
+    &-author-name{
+        color:#fff;
+        font-size: 30px;
+    }
+    &-desi{
+        color:#fff;
+        font-size: 17px; 
+    }
+}
+.quote-90{
+    transform: scaleX(-1);
+    display: inline-block;
+}
+// .tp-testi-swiper-button{
+//     position: absolute;
+//     top:50%;
+//     &-next{
+//         left:auto;
+//     }
+// }
+.tp-testi-swiper-button {
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    z-index: 9;
+    @media #{$xxlm,$xl,$md,$xs} {
+        top:inherit;
+        left: 0;
+        bottom: 0;
+        position: static;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    @media #{$lg} {
+        left: 0;
+    }
+}
+.tp-testi-swiper-button-next {
+    left: auto;
+    right: -100px;
+    @media #{$xxlm,$xl,$md,$xs} {
+        right:inherit;
+        bottom: 0;
+        left: 60px;
+    }
+    @media #{$lg} {
+        right: 0;
+    }
+}
+.tp-testimonial-shape-thumb1 {
+    left: 0;
+    top: 110px;
+}
+.tp-testimonial-shape-thumb2{
+    right: 0;
+    top:40px
+}

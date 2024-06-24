@@ -1,0 +1,45 @@
+@use '../utils' as *;
+.tp-section{
+    &-subtittle{
+      color:#57595C;
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: uppercase;
+      display: block;
+      & i{
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: #0057FC;
+        margin-right: 10px;
+      }
+    }
+    &-tittle{
+        font-size: 60px;
+    font-weight: 500;
+    @media #{$lg} {
+        font-size: 50px;
+     }
+     @media #{$md,$xs} {
+        font-size: 38px;
+     }
+    &-white{
+        color:#fff;
+    }
+    & br{
+        @media #{$xs} {
+            display:none;
+         }
+    }
+    &-wrapper{
+        & p{
+            & br{
+                @media #{$xs} {
+                    display:none;
+                 }
+            }
+        }
+    }
+    }
+}

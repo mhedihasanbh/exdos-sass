@@ -1,0 +1,115 @@
+@use '../utils' as *;
+.tp-btn {
+    background-color: var(--tp-theme-color);
+    font-family: var(--tp-font-heading);
+    font-size: 18px;
+    display: inline-block;
+    padding: 22px 50px;
+    border-radius: 5px;
+    color:#fff;
+    position: relative;
+    overflow: hidden;
+    & i{
+            
+        height: 100%;
+        width: 20px;
+        position: absolute;
+        background-color: #71A2FF;
+        right: -7px;
+        bottom: -2px;
+        transform: rotate(16deg);
+    
+    
+}
+&:hover{
+   & .tp-btn-y-1{
+    transform: translateY(-100%);
+    }
+    & .tp-btn-y-2{
+        transform: translateY(0%);
+        }
+        color:#fff;
+        & i{
+            right: -100%;
+        }
+}
+    &-sec{
+        background-color: var(--tp-theme-color2);
+        font-family: var(--tp-font-heading);
+        font-size: 18px;
+        display: inline-block;
+        padding: 21px 45px;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        &-lg{
+            padding: 16px 48px;
+        }
+        & i{
+            
+                height: 100%;
+                width: 20px;
+                position: absolute;
+                background-color: #E5CF00;
+                right: -7px;
+                bottom: -2px;
+                transform: rotate(16deg);
+            
+            
+        }
+        &:hover{
+           & .tp-btn-y-1{
+            transform: translateY(-100%);
+            }
+            & .tp-btn-y-2{
+                transform: translateY(0%);
+                }
+                & i{
+                    right: -100%;
+                }
+
+        }
+    }
+    &-header{
+        padding: 13px 25px;
+        margin-left: 20px;
+    }
+    &-circle{
+        font-size: 60px;
+        color:#fff;
+        opacity: .3;
+        border:2px solid rgba(255,2555,255,.2);
+        border-radius: 100%;
+        padding: 45px 70px;
+        &:hover{
+            color:#fff;
+            opacity: 1;
+            background-color: var(--tp-theme-color);
+        }
+        
+    }
+    &-wrapper{
+        position: relative;
+        overflow: hidden;
+        display: block;
+        & span{
+            display: block;
+            transition: 0.2s;
+        }
+    }
+    &-y-1{
+
+    }
+    &-y-2{
+      position: absolute;  
+      left: 0;
+      top:0;
+      width: 100%;
+      transform: translateY(100%);
+
+    }
+}
+.tp-header-btn{
+    display: flex;
+    align-items: center;
+}
